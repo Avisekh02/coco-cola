@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    height: 500vh;
+    overflow-x: hidden;
+
+}
+.main{
+    width: 100vw;
+    height: 500vh;
+    background: linear-gradient(120deg,white,#F40000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .nav-bar{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background: transparent ;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    position: fixed;
+}
+
+.main .nav-bar .logo img{
+    width: 10vw;
+    height: 5vh;
+}
+
+.main .nav-bar ul{
+    display: flex;
+}
+
+.main .nav-bar ul li{
+    list-style: none;
+}
+
+.main .nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 1vw;
+    padding: 1vw;
+    transition: 0.2s all ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.main .nav-bar ul li a:hover{
+    border-bottom: 3px solid white;
+    color: #F40000;
+}
+.cola-img{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cola-img img:nth-child(1){
+    width: 90%;
+    height: 45vh;
+    display: flex;
+    z-index: 1;
+}
+
+.cola-img img:nth-child(2){
+    position: absolute;
+    width: 30vw;
+    height:60vh;
+    z-index: 2;
+    transform: rotate(45deg);
+    left: 45vw;
+
+}
+.cola-img img:nth-child(3){
+    position: absolute;
+    width: 20vw;
+    height:60vh;
+    z-index: 5;
+    top: 30vh;
+}
+.cola-img img:nth-child(4){
+    position: absolute;
+    width: 20vw;
+    height:70vh;
+    z-index: 2;
+    transform: rotate(-45deg);
+    right: 50vw;
+
+}
+
+.main .products{
+    width: 100vw;
+    height: 150vh;
+}
+.main .products .sec{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+}
+.main .products .sec:nth-child(1){
+    background: #8d0b0b90;
+}
+.main .products .sec:nth-child(2){
+    background: rgba(6, 210, 6, 0.709);
+}
+.main .products .sec:nth-child(3){
+    background: rgba(178, 117, 3, 0.477);
+}
+.main .products .sec .left,.main .products .sec .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100%;
+    position: relative;
+}
+.main .products .sec .left svg ,.main .products .sec .right svg{
+    position: absolute;
+
+    width: 30vw;
+}
+.main .products .sec .left img ,.main .products .sec .right img{
+    position: absolute;
+    width: 15vw;
+    height: 40vh;
+}
+
+
+
+
+.cola-sec{
+    background:linear-gradient(hsla(0, 100%, 48%, 0.125));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cola-sec .card{
+    width: 20vw;
+    height: 60vh;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #F40000;
+    flex-direction: column;
+}
+.cola-sec .card h1,.cola-sec .card h3{
+    margin: 15px;
+}
+
+.cola-sec .card h3 a{
+    text-decoration: none;
+    background: #F40000;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.main .scroll{
+    width: 200vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.main .scroll img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.main .scroll img:hover{
+    transform: scale(2);
+}
+
