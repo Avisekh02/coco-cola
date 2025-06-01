@@ -186,6 +186,7 @@ html,body{
 }
 
 .main .scroll img:hover{
-    transform: scale(2);
+    width: 100px;
+    height: 100px;
 }
 
